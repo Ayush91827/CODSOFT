@@ -213,4 +213,8 @@ ul a:hover{
         width: 100%;
         max-width: max-content;
     }
+    .rating p{
+        padding-right:10px;
+        padding-top:20px;
+    }
 }
