@@ -336,26 +336,8 @@ footer>.container>p a{
     .s-links{
         justify-content: center;
     }
-}
-@media(max-width:768px){
-    .container{
-        padding: 0 1rem;
-    }
-    section{
-        padding: 3rem 0;
-    }
-    h1{
-        font-size: 1.8rem;
-    }
-    h3{
-        font-size: 1.5rem;
-    }
-    .card{
-        padding:1.5rem;
-    }
-    #Resume a{
-        padding: 0.8rem 2rem;
-        font-size: 1rem;
+    .widthproblem{
+        width: 270px;
     }
 }
     
