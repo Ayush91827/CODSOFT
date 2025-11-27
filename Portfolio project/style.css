@@ -1,0 +1,350 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    color: #333;
+    font-size: 16px;
+}
+h1,h3,h4,h5{
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    color: rgb(76, 77, 77);
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+}
+h3{
+    font-size: 1.75rem;
+}
+h4{
+    font-size: 1.4rem;
+}
+h5{
+    font-size: 1.15rem;
+}
+p{
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+a{
+    text-decoration: none;
+    color: rgb(35, 107, 251);
+    transition: color 0.4s ease;
+}
+a:hover{
+    color: rgb(18, 58, 111);
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+header{
+    background: linear-gradient(120deg,#031528 0%, #381365 100%);
+    color: white;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,1);
+}
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    flex-wrap:wrap;
+}
+nav ul{
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+nav ul a{
+    color: white;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.4s ease;
+}
+nav ul li a:hover{
+    color: #a25656;
+    text-decoration: none;
+}
+section{
+    padding:5rem 0;
+}
+section:nth-child(odd){
+    background-color: white;
+}
+section:nth-child(even){
+    background-color: #f8f9fa;
+}
+#Intro{
+    background: linear-gradient(120deg, #7a90f4 0%, #c4a6e2 100%);
+    text-align: center;
+    padding: 8rem 0;
+}
+#Intro .text{
+    max-width: 800px;
+    margin: 0 auto;
+}
+#Intro p{
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+#About .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+#About img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit:cover;
+    border: 5px solid hsl(231, 53%, 77%);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+#About img:hover{
+    transform: scale(1.08);
+}
+#About p{
+    max-width: 700px;
+    font-size:1.1rem;
+    line-height: 1.8;
+}
+#Skills .container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+#Skills .container>div:first-child{
+    grid-column: 1/-1;
+}
+.card{
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow:0 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-10);
+    box-shadow: 0 10px 30px;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    margin:0 auto 1.5rem;
+    display: block;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.card h4{
+    color: #7c92f6;
+    margin-bottom:1rem;
+}
+#Projects .container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+#Projects h3{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5;
+}
+#Projects ul{
+    display: grid;
+    gap: 2rem;
+}
+#Projects li{
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    border-left: 4px solid #7c92f6;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+#Projects li:hover{
+    transform:translateX(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+#Projects h4{
+    color:#7c92f6;
+    margin-bottom: 0.5rem;
+}
+#Resume{
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(120deg, #7a90f4 0%, #c4a6e2 100%);
+}
+#Resume h3{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+#Resume a{
+    display: inline-block;
+    background: white;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transition 0.3s ease, box-shadow 0.3s ease;
+}
+
+#Resume a:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+#Contact{
+    text-align: center;
+    padding: 5rem 2rem;
+}
+#Contact h3{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+#Contact ul{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+#Contact li div{
+    background: hsl(230, 78%, 80%);
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+#Contact li div:hover{
+    background:#c4a6e2;
+    transform: scale(1.05);
+}
+footer{
+    background: #1f3f62;
+    color: white;
+    padding: 3rem 2rem 1rem;
+}
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(autodit, minmax(250px,1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+.f-section{
+    text-align:center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+.s-links a{
+    margin:0 auto;
+}
+.f-links li,footer .f-section ul li{
+    margin-bottom: 0.5rem;
+}
+footer a{
+    color: lightslategray;
+    transition: color 0.5s ease;
+}
+footer a:hover{
+    color: white;
+}
+.s-links{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.s-links a{
+    background: rgba(255,255,255,0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+.s-links a:hover{
+    background: rgba(255,255,255,0.2);
+}
+footer>.container>p{
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+footer>.container>p a{
+    margin: 0 1rem;
+}
+.f-section h5{
+    color: antiquewhite;
+}
+.f{
+    display:flex;
+    justify-content:space between;
+}
+@media(max-width:768px){
+    header{
+        position:relative;
+    }
+    header  .container{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    header nav ul{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.8rem;
+    }
+    #Intro{
+        padding: 5rem 0;
+    }
+    #Intro p{
+        font-size: 1rem;
+    }
+    #About .container{
+        flex-direction: column;
+    }
+    #About img{
+        width: 200px;
+        height: 200px;
+    }
+    #Skills .container{
+        grid-template-columns: 1fr;
+    }
+    #Contact ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .s-links{
+        justify-content: center;
+    }
+}
+    

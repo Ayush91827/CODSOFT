@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(135deg,#fdfafa 0%, white 20%, rgb(253, 251, 251));
+    text-align: center;
+    color: #333333;
+    font-size: 1.5rem;
+    font-family: 'Lato',sans-serif;
+}
+h1,h2{
+    font-family: 'Montserrat',sans-serif;
+}
+.hero .subheading{
+    margin: 40px auto;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    max-width: 55%;
+}
+.hero .img{
+    max-width: 100%;
+    line-height: 0;
+    margin: 10 px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cta{
+    display: inline-block;
+    max-width: fit-content;
+    background-color: #7d848b;
+    padding: 15px;
+    border-radius: 50px;
+    color: #f5a022;
+    box-shadow:0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in;
+    transform: translateY(0);
+}
+.cta:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.6);
+}
+.ctadiv a{
+    text-decoration: none;
+}
+.ctadiv{
+    padding: 20px;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #ff7c00;
+    margin: 10px 0;
+}
+.rating p{
+    color: #333333;
+}
+.ratingtext{
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    gap: 2px;
+    max-width: 380px;
+    height: fit-content;
+    margin: 10px;
+    background-color: #d1d8df;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px;
+    transition: all 0.3s ease-in;
+}
+.card:hover{
+    box-shadow: 0px 6px 10px;
+    transform: scale(1.05);
+}
+.reasons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 20px;
+    margin: 40px auto;
+}
+.reason{
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    text-align: left;
+    background-color: #e9eecc;
+    box-shadow: 0px 4px 6px;
+}
+#final h2{
+    margin: 30px;
+}
+.options{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.optcard img{
+    width: 250px;
+}
+.optcard{
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px;
+    transition: all 0.2s ease-in;
+    transform: translateY(0);
+}
+.optcard:hover{
+    box-shadow: 1px 4px 7px;
+    transform: translateY(-7px);
+}
+.optcard a{
+    text-decoration: none;
+    color: #061b48;
+}
+.risk{
+    display: inline-block;
+    width: 1200px;
+}
+.start{
+    background-color: #d7e0e8;
+}
+footer{
+    padding: 60px 20px;
+    background: linear-gradient(to right, #2c3e50, #59768f 50%, #2c3e50 100%);
+    color: #f7f9f9;
+}
+.footcont{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+footer p{
+    font-weight: 600;
+    font-size: 20px;
+}
+nav ul{
+    border-top: 1px solid rgba(253, 253, 253, 0.207);
+    list-style: none;
+    margin-top: 50px;
+    display: flex;
+    gap: 90px;
+    justify-content: space-around;
+}
+ul a{
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+ul a:hover{
+    color: rgb(73, 244, 21);
+    text-shadow: 0px 0px 10px rgb(81, 85, 81);
+    transform: scale(1.05);
+}
+
+@media(max-width:768px){
+    main,footer{
+        padding: 0px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .subheading,#ratingbar p{
+        font-size: 1rem;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    .links{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .optcard{
+        flex-basis: 100;
+        max-width: 90%;
+    }
+    .cta{
+        width: 90%;
+        max-width: 400px;
+    }
+    .testimonials{
+        width: 100%;
+    }
+    .reasons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .reason{
+        width: 100%;
+        max-width: max-content;
+    }
+    .rating p{
+        padding-right:10px;
+        padding-top:20px;
+    }
+}
