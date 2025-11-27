@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="./calc.css">
+</head>
+<body>
+    <div class="info">
+        <h2>Instructions To Use</h2>
+        <ul>
+            <li>Write the first number.</li>
+            <li>Then when you will enter the operation the first number will disappear and the display will show a 0.</li>
+            <li>But upon writing the second number and pressing the equal button the answer will be shown.</li>
+            <li>Thank You for reading!</li>
+        </ul>
+    </div>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <div class="display">
+         <p class="disp">0</p>
+        </div>
+        <div class="buttons">
+            <button class="btn  clear" onclick="clearDisplay()">C</button>
+            <button class="btn operator" onclick="chooseoperation('/')">/</button>
+            <button class="btn operator" onclick="chooseoperation('*')">*</button>
+            <button class="btn operator" onclick="chooseoperation('+')">+</button>
+            <button class="btn" onclick="appendtoDisplay('7')">7</button>
+            <button class="btn" onclick="appendtoDisplay('8')">8</button>
+            <button class="btn" onclick="appendtoDisplay('9')">9</button>
+            <button class="btn operator" onclick="chooseoperation('-')">-</button>
+            <button class="btn" onclick="appendtoDisplay('4')">4</button>
+            <button class="btn" onclick="appendtoDisplay('5')">5</button>
+            <button class="btn" onclick="appendtoDisplay('6')">6</button>
+            <button class="btn equal" onclick="calculate()">=</button>
+            <button class="btn" onclick="appendtoDisplay('1')">1</button>
+            <button class="btn" onclick="appendtoDisplay('2')">2</button>
+            <button class="btn" onclick="appendtoDisplay('3')">3</button>
+            <button class="btn" onclick="appendtoDisplay('0')">0</button>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
